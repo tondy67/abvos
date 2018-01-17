@@ -1,6 +1,6 @@
 # abvos
 
-[AbvOS](https://tondy.org/abvos/) is a fully decentralized [loosely coupled](https://en.wikipedia.org/wiki/Loose_coupling) distributed search engine and social network where the user control everything.
+[AbvOS](https://tondy67.github.io/abvos/) is a fully decentralized [loosely coupled](https://en.wikipedia.org/wiki/Loose_coupling) distributed search engine and social network where the user control everything.
 
 Abv (абв) are the first three letters in the [bulgarian alphabet cyrillic](https://en.wikipedia.org/wiki/Cyrillic_script)
 
