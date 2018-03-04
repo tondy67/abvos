@@ -19,16 +19,11 @@ Technically speaking AbvOS is a [Websockets](https://en.wikipedia.org/wiki/WebSo
 * The node can be started even in android phone
 * As a side effect, this design will cut the spread of fake news around the world
 
-## Source
+## Sources
 
 * [abv-server](https://github.com/tondy67/abv-server)
 * [abv-node](https://github.com/tondy67/abv-node)
 * [abv-agent](https://github.com/tondy67/abv-agent)
 
-## Live demos
+### [Live demos](https://tondy67.github.io/abvos/nodes.html)
 
-* [openshift.eona.net](http://openshift.eona.net/)
-* [now.eona.net](https://now.eona.net/)
-* [eona.herokuapp.com](https://eona.herokuapp.com/)
-* [abvos.cloudno.de](http://abvos.cloudno.de/)
-* [abvos.openode.io](http://abvos.openode.io/)
