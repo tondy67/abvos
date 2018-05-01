@@ -1,0 +1,48 @@
+{
+  "name": "abvos",
+  "version": "0.0.4",
+  "description": "Abvos desktop",
+  "engines": {
+    "node": ">=6.11.3"
+  },
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "abv-agent": "0.0.5",
+    "abv-events": "0.0.2",
+    "abv-node": "0.0.4",
+    "abv-spa": "0.0.5",
+    "abv-ts": "0.0.4",
+    "abv-vfs": "0.0.4",
+    "ws": "^5.1.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.4",
+    "utf-8-validate": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tondy67/abvos.git"
+  },
+  "keywords": [
+    "node",
+    "abvos",
+    "websocket",
+    "abv"
+  ],
+  "author": {
+    "name": "Todor Angelov",
+    "email": "abv@tondy.com",
+    "url": "http://tondy.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tondy67/abvos/issues"
+  },
+  "homepage": "https://github.com/tondy67/abvos#readme",
+  "env": {
+    "PORT": "80"
+  }
+}

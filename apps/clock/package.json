@@ -1,0 +1,45 @@
+{
+  "name": "clock",
+  "version": "0.0.1",
+  "description": "Clock app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "abv-agent": "file:../abv-agent",
+    "abv-events": "file:../abv-events",
+    "abv-node": "file:../abv-node",
+    "abv-spa": "file:../abv-spa",
+    "abv-ts": "file:../abv-ts",
+    "abv-vfs": "file:../abv-vfs",
+    "ws": "^5.1.1"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^3.0.4",
+    "utf-8-validate": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tondy67/abvos.git"
+  },
+  "keywords": [
+    "node",
+    "abvos",
+    "websocket",
+    "abv"
+  ],
+  "author": {
+    "name": "Todor Angelov",
+    "email": "abv@tondy.com",
+    "url": "http://tondy.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tondy67/abvos/issues"
+  },
+  "homepage": "https://github.com/tondy67/abvos#readme",
+  "env": {
+    "PORT": "80"
+  }
+}

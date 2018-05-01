@@ -27,3 +27,15 @@ Technically speaking AbvOS is a [Websockets](https://en.wikipedia.org/wiki/WebSo
 
 ### [Live demos](https://tondy67.github.io/abvos/nodes.html)
 
+You can look at AbvOS as spiritual successor of the [Inferno os](https://en.wikipedia.org/wiki/Inferno_(operating_system)) and its [Styx protocol](https://en.wikipedia.org/wiki/9P_(protocol))
+
+Also despite that I write it in Javascript and C for practical reasons if you are interested in programming I strongly recommend to take a look at [Haxe language](https://haxe.org/). 
+AbvOS as haxe born, "[Cherchez la femme](https://en.wikipedia.org/wiki/Cherchez_la_femme)" as always and that fact will be never forgotten. 
+I wrote its first components, better said prototypes in haxe and they are archived [here](https://github.com/tondy67/abv-bac).
+
+I also have to mention [Now](https://zeit.co/now), [Heroku](https://heroku.com/), [Openshift](https://www.openshift.com/), [Cloudno.de](https://www.cloudno.de/), [Openode.io](https://openode.io/) because thanks to their generosity I can test my baby and you to see it in action [here](https://tondy67.github.io/abvos/nodes.html). 
+There is not much at the moment, be patient. More to come. 
+
+If you like this project which is built on top of [AbvOS](https://tondy67.github.io/abvos/) please consider funding further development by small donation [here](https://tondy.herokuapp.com/store)  and you'll see it an action bay the way :)
+
+That is... :)
