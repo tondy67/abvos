@@ -79,6 +79,17 @@ const init = () => {
 	const ttl = document.title;
 	el.innerHTML = fb(url,ttl) + tw(url,'tondy67',ttl) + gplus(url);
 };
+const setIframeSrc = () => {
+  var ifr = $sel('#clock');
+  ifr.src = '/app/clock/';
+  setTimeout(()=>{
+      if (window.stop) {
+          window.stop();
+      } else {
+          document.execCommand('Stop'); // MSIE
+      }
+  }, 1000);
+};
 
 const fb = (url, title='') => {
 	return `<a href="https://www.facebook.com/sharer/sharer.php?u=`+encodeURI(url)+`&t=`+encodeURI(title)+`"
@@ -100,4 +111,5 @@ window.onload = () => {
 	init();
 	modal();
 	openIFrame('abvos');
+	setTimeout(setIframeSrc, 1000);
 };
