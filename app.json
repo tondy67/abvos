@@ -1,0 +1,6 @@
+{
+  "name": "abv",
+  "description": "Abvos node server",
+  "keywords": ["node", "express", "abvos","websocket"],
+  "image": "public/favicon.png"
+}

@@ -1,30 +1,31 @@
 {
   "name": "abvos",
-  "version": "0.0.4",
-  "description": "Abvos desktop",
+  "version": "0.0.5",
+  "description": "Abvos board",
   "engines": {
     "node": ">=6.11.3"
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "dist": "browserify agent.js -o public/js/tmp.js && uglifyjs public/js/tmp.js public/js/abvos.js -c -m -o public/js/abvos.0.0.6.js",
+    "dev": "browserify agent.js -o public/js/tmp.js && uglifyjs public/js/tmp.js -b -m -o public/js/abv-node.0.0.6.js"
   },
   "dependencies": {
-    "abv-agent": "0.0.5",
-    "abv-events": "0.0.2",
-    "abv-node": "0.0.4",
-    "abv-spa": "0.0.5",
-    "abv-ts": "0.0.4",
-    "abv-vfs": "0.0.4",
-    "ws": "^5.1.1"
+    "abv-server": "0.0.5",
+    "abv-socket": "0.0.5",
+    "abv-ts": "0.0.5",
+    "abv-vfs": "0.0.5",
+    "ws": "^6.1.0"
   },
-  "optionalDependencies": {
-    "bufferutil": "^3.0.4",
-    "utf-8-validate": "^4.0.1"
+  "devDependencies": {
+    "abv-agent": "file:../abv-agent",
+    "browserify": "latest",
+    "uglify-es": "latest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tondy67/abvos.git"
+    "url": "git+https://gitlab.com/abvos/abvos.git"
   },
   "keywords": [
     "node",
@@ -39,9 +40,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tondy67/abvos/issues"
+    "url": "https://gitlab.com/abvos/abvos/issues"
   },
-  "homepage": "https://github.com/tondy67/abvos#readme",
+  "homepage": "https://gitlab.com/abvos/abvos#readme",
   "env": {
     "PORT": "80"
   }

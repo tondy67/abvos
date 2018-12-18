@@ -1,5 +1,3 @@
-[https://gitlab.com/tondy67](https://gitlab.com/tondy67)
-
 # abvos
 
 [AbvOS](https://tondy67.github.io/abvos/) is a fully decentralized [loosely coupled](https://en.wikipedia.org/wiki/Loose_coupling) distributed search engine and social network where the user control everything.

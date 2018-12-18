@@ -1,26 +1,38 @@
 /* https://tondy67.github.io/style.css */
+#abv-ts{
+width:360px;
+height:400px;
+position:fixed;
+top:0px;left:600px;
+color:red;
+z-index:110000;
+border:1px solid blue;
+overflow: auto;
+padding:4px;
+}
 body {
  background-color: white;
  color:#007;
  font-family: Verdana;
- overflow-x:hidden;
- overflow-y:auto;
+ overflow:hidden;
  padding: 10px;
+ overflow-y: auto;
 }
+.body{overflow:hidden;}
 #main,#header {
  background-color: #fefefe;
  width: 100%;
- overflow-x: hidden;
+ overflow: hidden;
 }
 #header{
  position:fixed;
 }
 #main{
-/* height: 90%; 
-	border: 2px solid red;*/
+/* height: 1000px;border: 2px solid red;*/
  padding: 50px 5px;
  min-height: 500px;
- overflow-y: auto;
+ 
+/* overflow-y: auto;*/
 }
 #main img{
  display: block;
@@ -28,17 +40,52 @@ body {
  margin-right: auto;
  width: 30%;
 }
-.app{
- position:absolute;
- top:0;
- left:0;
- width:100%;
- overflow: hidden;
+#main a{
+ color: #007;
+ border-bottom:1px solid #cdf;
+ box-shadow:inset 0 -4px 0 #b4e7f8;
+}
+#main a:hover {
+ color: #336699;
+}
+#nodes a{
  border:none;
+ box-shadow:none;
+}
+#header #htitle{text-align:center;}
+.board, .app{
+ position:absolute;
+ width:99%;
+ height:98%;
+ border:none;overflow: hidden;min-height: 500px;
  padding: 5px 5px;
- min-height: 500px;
  overflow-y: auto;
  visibility: hidden;
+ background-color: white;
+}
+.toast{
+ box-shadow: 0 0 15px #888;
+ border-radius: 5px;
+ background: rgba(255,165,0, 0.1);
+ display:none;
+ color:red;
+ margin:auto;
+ padding:8px;
+ width:280px;
+ text-align:center;
+ overflow: hidden;
+}
+.board{
+ top:50px;
+ left:10px;
+/* width:96%;
+ height:90%;
+ border: 1px solid red;*/
+}
+.app{
+ top:0;
+ left:0;
+/*border: 1px solid red;*/
 }
 #header {
  left:0px;
@@ -65,8 +112,9 @@ body {
 #header a:hover {
  background-color: #eee; 
 }
-#header #opennav{font-size: 32px;}
-#sidenav input[type=text]{
+#header #ropennav{text-align: right;}
+#header .opennav{font-size: 32px;}
+.nav input[type=text]{
 /* float: right;
  padding: 6px;*/
  border: none;
@@ -84,19 +132,21 @@ body {
  background: rgba(245, 245, 245, 0.8);
  cursor: pointer;
 }
-#sidenav {
+#lsidenav{left: 0;}
+#rsidenav{right: 0;}
+.nav {
  height: 100%;
  width: 0;
  position: fixed;
  z-index: 10002;
  top: 0;
- left: 0;
+ 
  background: #007;
  overflow-x: hidden;
  padding-top: 60px;
  transition: 0.5s;
 }
-#sidenav a {
+.nav a {
  padding: 8px 8px 8px 32px;
  text-decoration: none;
  font-size: 25px;
@@ -104,10 +154,10 @@ body {
  display: block;
  transition: 0.3s;
 }
-#sidenav a:hover {
+.nav a:hover {
  color: #f1f1f1;
 }
-#sidenav #closenav {
+.nav .closenav {
  position: absolute;
  top: 0;
  right: 25px;
@@ -141,7 +191,6 @@ a{
  color: #007;
  text-decoration: none;
 }
-
 a:hover {
  color: #336699;
 }
@@ -155,9 +204,9 @@ a:hover {
 	display:block;
 }
 .item, .user{
-	width:200px;
-	height:250px;
-	text-align:center;
+ width:200px;
+ height:250px;
+ text-align:center;
  float: left;
  padding: 5px;
  margin:15px;
@@ -167,18 +216,12 @@ a:hover {
  height:150px;
  margin:10px;
 }
-.clearfix::after {
- content: "";
- clear: both;
- display: table;
-}
 .icon{
- font-size:3em; 
- color:#cdf;
- float: left;
+ font-size:1.5em; 
+ cursor: pointer;
 }
 .icon:hover {
- color: #336699;
+ color: #369;
 }
 #tools a {
  font-size:2em; 
@@ -199,11 +242,18 @@ text-transform: uppercase;
 /*
 .box{
  margin:5px;
-}
-ul.box{
+}*/
+ul{
  list-style-type: none;
-} */
-
+ padding-left:0;
+} 
+.tbl li {
+display: inline-block;
+margin:1px;
+}
+li .lcol{
+ width:110px;
+}
 /* modal  */
 #main img {
  box-shadow: 0 0 15px #888;
@@ -225,7 +275,7 @@ ul.box{
  overflow: auto;
  background-color: rgb(0,0,0);
  background-color: rgba(0,0,0,0.9);
-	z-index:100000;
+ z-index:100000;
 }
 .modal-content {
  margin: auto;
@@ -300,6 +350,6 @@ ul.box{
 @media screen and (max-width: 600px){
  .modal-content { width: 100%; }
  #header a { width: 85%;}
- #header #opennav{width: 10%;}
+ #header .opennav{width: 32%;}
  .lcol, .rcol {width: 100%;padding: 0;}
 }
